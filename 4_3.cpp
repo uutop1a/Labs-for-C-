@@ -24,7 +24,7 @@ int main() {
         cin >> m[i];
     }
     int result = maxAbs(m, n);
-    cout << "Found number: " << result << endl;
+    cout << "Found number: " << result;
 
     return 0;
 }

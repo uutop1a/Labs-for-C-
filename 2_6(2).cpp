@@ -46,10 +46,7 @@ void inputDeque(deque<int>& D) {
 void manipulateContainers(vector<int>& V, deque<int>& D) {
     int halfV = static_cast<int>(V.size()) / 2;
     int halfD = static_cast<int>(D.size()) / 2;
-
-    // исходный вектор
     vector<int> originalV = V;
-
     // в конец вектора первую половину дека
     V.insert(V.end(), D.begin(), D.begin() + halfD);
     // временный контейнер — вторая половина исходного вектора
@@ -79,7 +76,7 @@ int main() {
     inputVector(V);
     inputDeque(D);
     manipulateContainers(V, D);
-    printVector(V);        // вектор после вставки первой половины дека
-    printDeque(D);         // дек в нормальном порядке (чтобы было наглядно)
+    printVector(V);
+    printDeque(D);
     return 0;
 }

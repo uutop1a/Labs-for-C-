@@ -3,7 +3,6 @@
 #include <vector>
 #include <iterator>
 #include <string>
-#include <sstream>
 using namespace std;
 
 void readNumbersFromFile(const string& filename, vector<int>& V) {
@@ -12,7 +11,7 @@ void readNumbersFromFile(const string& filename, vector<int>& V) {
         cerr << "Error when opening a file!" << endl;
         return;
     }
-    // Чтение данных из файла
+    // чтение данных из файла
     istream_iterator<int> start(infile), end;
     V.assign(start, end);
     infile.close();

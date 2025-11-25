@@ -2,14 +2,20 @@
 #include <string>
 using namespace std;
 
-int numLen(const string& x) {
-    return x.length();
+string chet(int x) {
+    string result;
+    for (int i = 0; i <= x; i += 2) {
+        if (!result.empty()) {
+            result += " ";
+        }
+        result += to_string(i);
+    }
+    return result;
 }
 
 int main() {
-    string y;
+    int x;
     cout << "Enter x:";
-    cin >> y;
-    cout << numLen(y) << endl;
-    return 0;
+    cin >> x;
+    cout << chet(x) << endl;
 }

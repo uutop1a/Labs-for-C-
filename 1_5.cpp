@@ -12,7 +12,7 @@ bool is2Digits(int x) {
 int main() {
 
     int x;
-    cout << "Enter x:" << endl;
+    cout << "Enter x:";
     cin >> x;
 
 

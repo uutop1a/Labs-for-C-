@@ -3,7 +3,6 @@
 #include <algorithm>
 #include <limits>
 using namespace std;
-
 struct IsPositive {
     bool operator()(int x) const {
         return x > 0;
@@ -40,8 +39,6 @@ void inputVector(vector<int>& V) {
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
     }
-
-
 }
 
 void duplicateFirstKPositive(vector<int>& V, int K) {
@@ -70,5 +67,4 @@ int main() {
     cout << "\nVector after duplicating first K positive numbers:\n";
     printVector(V);
     return 0;
-
 }

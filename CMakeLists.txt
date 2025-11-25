@@ -25,4 +25,9 @@ add_executable(untitled4 main.cpp
         "3_8(2).cpp"
         "4_2(2).cpp"
         "5_9(2).cpp"
+        "6_9(2).cpp"
+        "7_6(2).cpp"
+        "8_2(2).cpp"
+        "9_1(2).cpp"
+        "10_1(2).cpp"
 )

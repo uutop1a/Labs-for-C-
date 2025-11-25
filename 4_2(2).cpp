@@ -12,7 +12,6 @@ void readNumbersFromFile(const string& filename, vector<int>& numbers) {
         cerr << "Cannot open file: " << filename << endl;
         return;
     }
-
     int x;
     while (infile >> x) {
         numbers.push_back(x);
@@ -56,7 +55,7 @@ vector<int> getOddPositionNumbers(const vector<int>& numbers) {
     return result;
 }
 
-// Функция вывода вектора в прямом порядке
+// функция вывода вектора в прямом порядке
 void printVector(const vector<int>& v) {
     for (auto it = v.begin(); it != v.end(); ++it)
         cout << *it << " ";

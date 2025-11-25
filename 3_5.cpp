@@ -1,20 +1,15 @@
 #include <iostream>
-#include <cmath>
+#include <string>
 using namespace std;
 
-int numLen(long x) {
-    if (x == 0) return 1;
-    int count = 0;
-    while (x != 0) {
-        count++;
-        x /= 10;
-    }
-    return count;
+int numLen(const string& x) {
+    return x.length();
 }
 
 int main() {
-    int x;
-    cout << "Enter x: ";
-    cin >> x;
-    cout << numLen(x);
+    string y;
+    cout << "Enter x:";
+    cin >> y;
+    cout << numLen(y) << endl;
+    return 0;
 }

@@ -12,15 +12,15 @@ bool isEqual(int a, int b, int c) {
 
 int main() {
     int a;
-    cout<< "Enter a:"<< endl;
+    cout<< "Enter a:";
     cin>> a;
 
     int b;
-    cout<< "Enter b:"<< endl;
+    cout<< "Enter b:";
     cin>> b;
 
     int c;
-    cout<< "Enter c:"<< endl;
+    cout<< "Enter c:";
     cin>> c;
 
     if (isEqual(a, b, c) == 0) {

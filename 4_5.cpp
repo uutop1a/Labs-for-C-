@@ -13,7 +13,6 @@ int* add(int arr[], int ins[], int pos, int arrSize, int insSize) {
     for (int i = pos; i < arrSize; i++) {
         result[insSize + i] = arr[i];
     }
-
     return result;
 }
 

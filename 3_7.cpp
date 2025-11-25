@@ -11,7 +11,7 @@ void square(int x) {
 
 int main() {
     int x;
-    cout << "Enter x: ";
+    cout << "Enter x:";
     cin >> x;
     square(x);
 }
