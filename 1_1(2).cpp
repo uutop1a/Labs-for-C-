@@ -36,5 +36,5 @@ int main() {
     } else {
         printVectorInOrder(V);
     }
-    return 0;
+
 }
