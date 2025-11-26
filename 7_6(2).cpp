@@ -8,20 +8,16 @@ list<int> readList()
 {
     list<int> L;
     int n;
-
     cout << "Enter a count of numbers in list: ";
     while (!(cin >> n) || n <= 0) {
         cin.clear();
-        cin.ignore(10000, '\n');
         cout << "Error! Enter a positive number: ";
     }
-
     cout << "Enter " << n << " even numbers:\n";
     for (int i = 0; i < n; i++) {
         int x;
         while (!(cin >> x)) {
             cin.clear();
-            cin.ignore(10000, '\n');
             cout << "Error! Enter a even number: ";
         }
         L.push_back(x);
@@ -50,6 +46,5 @@ int main()
     rearrangeList(L);
     cout << "\nResult:\n";
     printList(L);
-
     return 0;
 }

@@ -10,7 +10,6 @@ void inputVector(vector<int>& V) {
     cout << "Enter the number of vector elements (even number): ";
     while (!(cin >> n) || n <= 0 || n % 2 != 0) {
         cin.clear();
-        cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cout << "Error. Enter an even positive number: ";
     }
     V.resize(n);
@@ -18,7 +17,6 @@ void inputVector(vector<int>& V) {
     for (int i = 0; i < n; ++i) {
         while (!(cin >> V[i])) {
             cin.clear();
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
             cout << "Error. Enter number: ";
         }
     }
@@ -29,7 +27,6 @@ void inputDeque(deque<int>& D) {
     cout << "Enter the number of deque elements (even number): ";
     while (!(cin >> n) || n <= 0 || n % 2 != 0) {
         cin.clear();
-        cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cout << "Error. Enter    an even positive number: ";
     }
     D.resize(n);
@@ -37,7 +34,6 @@ void inputDeque(deque<int>& D) {
     for (int i = 0; i < n; ++i) {
         while (!(cin >> D[i])) {
             cin.clear();
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
             cout << "Error. Enter number: ";
         }
     }

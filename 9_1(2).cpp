@@ -14,7 +14,6 @@ vector<int> readVector(int index = -1)
 
     while (!(cin >> n) || n <= 0) {
         cin.clear();
-        cin.ignore(10000, '\n');
         cout << "Error! Enter a positive number: ";
     }
     vector<int> V(n);
@@ -22,7 +21,6 @@ vector<int> readVector(int index = -1)
     for (int i = 0; i < n; i++) {
         while (!(cin >> V[i])) {
             cin.clear();
-            cin.ignore(10000, '\n');
             cout << "Error! Enter a positive numbers: ";
         }
     }
@@ -60,7 +58,6 @@ int main()
     cout << "\nEnter a count of vectors N (> 0): ";
     while (!(cin >> N) || N <= 0) {
         cin.clear();
-        cin.ignore(10000, '\n');
         cout << "Error! Enter a positive number: ";
     }
     vector<vector<int>> Vlist;

@@ -14,7 +14,6 @@ list<string> readList()
     cout << "Enter a count of words in list L: ";
     while (!(cin >> n) || n < 2) {
         cin.clear();
-        cin.ignore(10000, '\n');
         cout << "Error! A count of words must be >= 2: ";
     }
     cout << "Enter " << n << " english words:\n";

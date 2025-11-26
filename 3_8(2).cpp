@@ -10,7 +10,6 @@ void inputVector(vector<int>& V) {
     while (!(cin >> n) || n <= 0) {
         cout << "Error! Please enter a POSITIVE integer.: ";
         cin.clear();
-        cin.ignore(numeric_limits<streamsize>::max(), '\n');
     }
 
     V.resize(n);
@@ -19,7 +18,6 @@ void inputVector(vector<int>& V) {
         while (!(cin >> *it)) {
             cout << "Error! Please enter an integer.: ";
             cin.clear();
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
     }
 }

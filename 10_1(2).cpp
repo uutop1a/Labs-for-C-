@@ -9,7 +9,6 @@ vector<int> readVector()
     cout << "Enter a count of numbers in vector: ";
     while (!(cin >> n) || n <= 0) {
         cin.clear();
-        cin.ignore(10000, '\n');
         cout << "Error! Enter a positive number: ";
     }
 
@@ -18,7 +17,6 @@ vector<int> readVector()
     for (int i = 0; i < n; i++) {
         while (!(cin >> V[i])) {
             cin.clear();
-            cin.ignore(10000, '\n');
             cout << "Error! Enter a even number: ";
         }
     }

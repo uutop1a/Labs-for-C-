@@ -29,11 +29,9 @@ list<int> readList()
 {
     list<int> L;
     int n;
-
     cout << "Enter count of elements (even): ";
     while (!(cin >> n) || n <= 0 || n % 2 != 0) {
         cin.clear();
-        cin.ignore(10000, '\n');
         cout << "Error! Enter positive even number: ";
     }
     cout << "Enter " << n << " int numbers:\n";
@@ -41,14 +39,13 @@ list<int> readList()
         int x;
         while (!(cin >> x)) {
             cin.clear();
-            cin.ignore(10000, '\n');
             cout << "Error! Enter int number: ";
         }
         L.push_back(x);
     }
-
     return L;
 }
+
 void printList(const list<int>& L)
 {
     for (int x : L) cout << x << " ";
@@ -57,12 +54,10 @@ void printList(const list<int>& L)
 
 int main()
 {
-    cout << "=== List processing L1 (reverse_copy + inserter) ===\n";
     list<int> L1 = readList();
     processListUsingReverseCopy(L1);
     cout << "Result L1: ";
     printList(L1);
-    cout << "\n=== List processing L2 (insert + reverse_iterator) ===\n";
     list<int> L2 = readList();
     processListUsingInsert(L2);
     cout << "Result L2: ";
