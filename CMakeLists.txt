@@ -30,4 +30,7 @@ add_executable(untitled4 main.cpp
         "8_2(2).cpp"
         "9_1(2).cpp"
         "10_1(2).cpp"
+        "1_9(4).cpp"
+        "2_9(4).cpp"
+        "123456_9(5).cpp"
 )
